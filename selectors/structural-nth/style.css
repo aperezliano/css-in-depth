@@ -1,0 +1,23 @@
+ul {
+  width: 100px;
+}
+
+li:nth-child(1) {
+  color: red;
+}
+
+li:nth-last-child(2) {
+  color: blue;
+}
+
+li:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+li:nth-child(3n + 1) {
+  text-align: right;
+}
+
+li:nth-of-type(odd)::after {
+  content: " -> I'm odd!";
+}
