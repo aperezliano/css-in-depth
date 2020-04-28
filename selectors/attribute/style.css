@@ -1,0 +1,23 @@
+img[alt] {
+  border: 2px solid red;
+}
+
+img[alt='random image 2'] {
+  border: 2px solid green;
+}
+
+img[alt|='yet'] {
+  border: 2px dashed peru;
+}
+
+img[alt^='second'] {
+  border: 2px solid blueviolet;
+}
+
+img[alt$='second row!'] {
+  border: 2px dashed turquoise;
+}
+
+img[alt*='...'] {
+  border: 2px groove slategrey;
+}
