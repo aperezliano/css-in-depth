@@ -1,0 +1,31 @@
+ul li {
+  color: red;
+}
+
+ul li::after {
+  content: " -> Descendant ' lis ' are in red";
+}
+
+div > div {
+  color: blue;
+}
+
+div div::after {
+  content: " -> Direct 'div' descendant is in blue";
+}
+
+div.foo + div {
+  color: green;
+}
+
+div.foo + div::after {
+  content: " -> 'div' directly after div.foo is in green";
+}
+
+p ~ div {
+  color: purple;
+}
+
+p ~ div::after {
+  content: " -> 'divs' preceded by a paragraph are purple";
+}
