@@ -21,3 +21,8 @@ img[alt$='second row!'] {
 img[alt*='...'] {
   border: 2px groove slategrey;
 }
+
+/* The i stands for case insensitive */
+img[alt='last random image' i] {
+  border: 2px dashed maroon;
+}
