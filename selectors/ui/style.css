@@ -1,0 +1,27 @@
+input:checked + label {
+  color: red;
+}
+
+input:hover + label {
+  color: green;
+}
+
+input:in-range {
+  background-color: greenyellow;
+}
+
+input:out-of-range {
+  background-color: red;
+}
+
+input:required {
+  background-color: peru;
+}
+
+input:invalid {
+  background-color: rebeccapurple;
+}
+
+input:valid {
+  background-color: green;
+}

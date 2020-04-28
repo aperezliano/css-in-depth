@@ -1,0 +1,23 @@
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: peru;
+}
+
+li:only-child {
+  color: green;
+}
+
+p:first-of-type {
+  color: yellowgreen;
+}
+
+p:last-of-type {
+  color: pink;
+}
+
+p:only-of-type {
+  color: aqua;
+}
