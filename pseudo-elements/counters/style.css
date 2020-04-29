@@ -1,6 +1,10 @@
 body {
   counter-reset: paragraphs;
-  width: 500px;
+  width: 450px;
+}
+
+body::after {
+  content: attr(data-width);
 }
 
 p:after {
