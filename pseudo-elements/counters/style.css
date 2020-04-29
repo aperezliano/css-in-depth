@@ -1,0 +1,14 @@
+body {
+  counter-reset: paragraphs;
+  width: 500px;
+}
+
+p:after {
+  content: '-> Paragraph: ' counter(paragraphs);
+  counter-increment: paragraphs;
+  font-weight: bold;
+}
+
+div {
+  counter-reset: paragraphs;
+}
