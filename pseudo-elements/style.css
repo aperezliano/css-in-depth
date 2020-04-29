@@ -1,0 +1,27 @@
+p {
+  width: 500px;
+}
+
+p:nth-last-of-type(n + 2)::first-letter {
+  position: relative;
+  float: left;
+  font-weight: 800;
+  font-size: 3em;
+  padding: 0 5px;
+  line-height: 1;
+  color: peru;
+}
+
+p:first-of-type:first-line {
+  font-weight: bold;
+}
+
+p:last-of-type::before,
+p:last-of-type::after {
+  content: '\269C';
+}
+
+p:last-of-type::selection {
+  color: aquamarine;
+  background-color: black;
+}
