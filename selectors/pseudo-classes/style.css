@@ -1,0 +1,26 @@
+li {
+  cursor: pointer;
+}
+
+a:hover {
+  color: peru;
+}
+
+li:active a {
+  color: red;
+}
+
+a:focus {
+  color: blue;
+}
+
+li:last-child {
+  display: none;
+}
+
+li:target {
+  display: block;
+  color: red;
+  font-weight: bold;
+  cursor: auto;
+}
