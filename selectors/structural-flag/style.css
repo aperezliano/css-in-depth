@@ -1,0 +1,28 @@
+td {
+  background-color: white;
+  color: white;
+}
+
+/* Red stripes */
+tr:nth-of-type(odd) td:nth-of-type(8) ~ td,
+tr:nth-of-type(2n + 9) td {
+  background-color: red;
+  color: red;
+}
+
+/* Blue stripes */
+tr:nth-last-of-type(n + 7) td:nth-last-of-type(n + 9) {
+  background-color: blue;
+  color: blue;
+}
+
+/* Stars */
+tr:nth-last-of-type(n + 7) td:nth-last-of-type(n + 9):after {
+  content: '\2605';
+  font-size: 15px;
+  color: white;
+}
+
+:root {
+  background-color: grey;
+}

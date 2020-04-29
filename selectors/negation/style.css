@@ -1,0 +1,11 @@
+ul {
+  width: 200px;
+}
+
+li:not(:nth-of-type(2n + 1)) {
+  color: red;
+}
+
+li:not(:nth-of-type(2n + 1)):after {
+  content: ' -> Every NOT 2n + 1 element is red';
+}
