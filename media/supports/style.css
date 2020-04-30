@@ -1,0 +1,21 @@
+div {
+  display: none;
+}
+
+@supports (display: flex) {
+  .flex {
+    display: block;
+  }
+}
+
+@supports (display: grid) {
+  .grid {
+    display: block;
+  }
+}
+
+@supports (display: invented) {
+  .invented {
+    display: block;
+  }
+}
