@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+  padding: 10px;
+}
+
+body {
+  display: grid;
+}
+
+header {
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: chocolate;
+  padding: 10px 0;
+}
+
+nav a {
+  background-color: blanchedalmond;
+  padding: 10px 30px;
+  border: 1px solid;
+}
+
+main {
+  margin: 5px 0;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 5px;
+}
+
+main div {
+  background-color: peru;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+main div p {
+  padding: 10px;
+  hyphens: auto;
+}
+
+main img {
+  align-self: center;
+  width: 250px;
+}
+
+footer {
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    grid-row-start: 3;
+  }
+}
